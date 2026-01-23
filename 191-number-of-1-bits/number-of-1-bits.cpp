@@ -11,3 +11,13 @@ public:
         
     }
 };
+
+/*#include <iostream>
+#include <bitset>
+using namespace std;
+
+int main() {
+    int n = 13;
+    cout << bitset<8>(n); // prints 00001101
+}
+*/
