@@ -7,7 +7,7 @@ public:
         int maxi=0;
         while(r<s.size()){
             if(hash[s[r]]!=-1){
-                if(hash[s[l]]<=hash[s[r]]){
+                if(l<=hash[s[r]]){
                     l=hash[s[r]]+1;
                 }
                 
