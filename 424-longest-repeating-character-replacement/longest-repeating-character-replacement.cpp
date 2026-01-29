@@ -10,13 +10,11 @@ public:
             
             hash[s[r]-'A']++;
             maxfreq=max(maxfreq,hash[s[r]-'A']);
-            if(((r-l+1)-maxfreq)<=k){
-                maxlen=max(maxlen,r-l+1);
+            while ((r - l + 1) - maxfreq > k) {
+                hash[s[l] - 'A']--;
+                l++;
             }
-            else{
-                hash[s[l]-'A']--;
-                l=l+1;
-            }
+            maxlen=max(r-l+1,maxlen);
             r++;
 
 
